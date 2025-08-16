@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
 	const pageSize = 5;
-	const apiKey = "341d2d6ac808444b866aae05f7c8d049";
+	const apiKey = import.meta.env.VITE_NEWS_API || "341d2d6ac808444b866aae05f7c8d049";
 	const [progress, setProgress] = useState(0);
 
 	return (
